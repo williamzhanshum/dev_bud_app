@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  /* background-color: rgb(255, 255, 255); */
+  background-color: rgb(240, 240, 240);
+}
+
+@layer base {
+  li {
+    /* @apply text-gray-500 hover:text-black; */
+  }
+
+  /* button {
+    @apply text-white border bg-black hover:bg-transparent hover:text-black hover:border-black rounded-md;
+  } */
+}
+
+.nav-link {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.nav-link:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
