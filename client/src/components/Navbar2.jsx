@@ -18,7 +18,9 @@ const Navbar2 = () => {
         DEVBUD.
       </Link>
       <ul className='hidden md:flex'>
-        <li className='p-4 nav-link'>How It Works</li>
+        <li className='p-4 hover:scale-105 ease-out duration-500 nav-link'>
+          How It Works
+        </li>
         <li className='p-4 nav-link'>Features</li>
         <li className='p-4 nav-link'>Compiler</li>
         <li className='p-4 nav-link'>About Us</li>
