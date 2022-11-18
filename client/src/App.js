@@ -1,17 +1,15 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Navbar2 from './components/Navbar2';
-import Steps from './components/Steps';
+import Main from './views/Main';
+import { Routes, Route } from 'react-router-dom';
+import FindDev from './views/FindDev';
 
 function App() {
   return (
     <div>
-      <Navbar2 />
-      {/* <Navbar /> */}
-      <Hero />
-      {/* <hr /> */}
-      <Steps />
+      <Routes>
+        <Route path='/' element={<Main />} />
+        <Route path='/devs' element={<FindDev />} />
+      </Routes>
     </div>
   );
 }

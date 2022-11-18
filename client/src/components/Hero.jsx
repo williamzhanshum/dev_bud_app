@@ -1,5 +1,6 @@
 import React from 'react';
 import Typed from 'react-typed';
+import { Link, Routes, Route } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -15,7 +16,7 @@ const Hero = () => {
           </p>
           <Typed
             className='md:text-5xl sm:text-4xl text-lg font-bold text-gray-400 md:pl-4 pl-2'
-            strings={['JavaScript', 'Python', 'Java', 'C#', '..and more!']}
+            strings={['JavaScript', 'Python', 'Java', 'C#']}
             typeSpeed={140}
             backSpeed={140}
             loop
@@ -26,7 +27,7 @@ const Hero = () => {
           developers.
         </p>
         <button className='w-[200px] rounded-md font-medium my-4 mx-auto py-3  text-white border bg-black hover:bg-transparent hover:text-black hover:border-black '>
-          Find a Developer
+          <Link to='/devs'> Find a Developer</Link>
         </button>
       </div>
     </div>
