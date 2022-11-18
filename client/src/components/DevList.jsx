@@ -1,17 +1,29 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import DevCard from './DevCard';
 
 const DevList = () => {
+  const [devs, setDevs] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get('http://localhost:8000/api/devs')
+      .then((res) => {
+        setDevs(res.data);
+        console.log(res.data);
+      })
+      .catch((err) => console.error(err));
+  }, []);
+
   return (
     <div className='w-full py-12 px-4'>
       <div
         className='max-w-[1240px] mx-auto flex flex-col'
         id='cards-container'
       >
-        <DevCard />
-        <DevCard />
-        <DevCard />
+        {devs.map((oneDev, idx) => {
+          return <DevCard oneDev={oneDev} key={idx} />;
+        })}
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import Tabs from './Tabs';
 
 const Steps = () => {
   return (
-    <div className='w-full py-16 px-4 '>
+    <div name='steps' className='w-full py-16 px-4 '>
       <div className='max-w-[1240px] mx-auto '>
         <div className='flex flex-col justify-center  text-center'>
           <p className='md:text-5xl sm:text-4xl text-xlg font-bold text-gray-400 mb-4'>

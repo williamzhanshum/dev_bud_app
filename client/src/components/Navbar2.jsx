@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
+import { animateScroll as scroll } from 'react-scroll';
 
 const Navbar2 = () => {
   const [nav, setNav] = useState(true);
@@ -18,12 +19,29 @@ const Navbar2 = () => {
         DEVBUD.
       </Link>
       <ul className='hidden md:flex'>
-        <li className='p-4 hover:scale-105 ease-out duration-500 nav-link'>
-          How It Works
+        {/* LINK W/ SMOOTH SCROLL  */}
+        {/* <li className='p-4 hover:scale-105 nav-link'>
+          <Link to='steps' smooth={true} offset={50} suration={500}>
+            How It Works
+          </Link>
         </li>
-        <li className='p-4 nav-link'>Features</li>
-        <li className='p-4 nav-link'>Compiler</li>
-        <li className='p-4 nav-link'>About Us</li>
+        <li className='p-4 hover:scale-105 nav-link'>
+          <Link to='test1' smooth={true} offset={50} suration={500}>
+            Features
+          </Link>
+        </li>
+        <li className='p-4 hover:scale-105 nav-link'>
+          <Link to='test1' smooth={true} offset={50} suration={500}>
+            About Us
+          </Link>
+        </li>
+        <li className='p-4 hover:scale-105 nav-link'>Create Room</li> */}
+
+        {/* --- Links W/O smooth scroll --- */}
+        <li className='p-4 hover:scale-105 nav-link'>How It Works</li>
+        <li className='p-4 hover:scale-105 nav-link'>Features</li>
+        <li className='p-4 hover:scale-105 nav-link'>About Us</li>
+        <li className='p-4 hover:scale-105 nav-link'>Create Room</li>
       </ul>
 
       <div onClick={handleNav} className='block md:hidden'>
@@ -43,8 +61,8 @@ const Navbar2 = () => {
         <ul className=''>
           <li className='p-4 border-b nav-link'>How It Works</li>
           <li className='p-4 border-b nav-link'>Features</li>
-          <li className='p-4 border-b nav-link'>Compiler</li>
           <li className='p-4 border-b nav-link'>About Us</li>
+          <li className='p-4 border-b nav-link'>Create Room</li>
         </ul>
       </div>
     </div>
