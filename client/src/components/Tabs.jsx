@@ -71,7 +71,7 @@ const Tabs = () => {
             <div className='px-4 py-5 flex-auto'>
               <div
                 className={openTab === 1 ? 'grid md:grid-cols-2' : 'hidden'}
-                id='link1'
+                id='#link1'
               >
                 <img className='w-[300px] mx-auto my-4' src={Find} alt='/' />
                 <div className='flex flex-col justify-center'>
@@ -87,7 +87,7 @@ const Tabs = () => {
               </div>
               <div
                 className={openTab === 2 ? 'grid md:grid-cols-2' : 'hidden'}
-                id='link2'
+                id='#link2'
               >
                 <img className='w-[300px] mx-auto my-4' src={Chat} alt='/' />
                 <div className='flex flex-col justify-center'>
@@ -103,7 +103,7 @@ const Tabs = () => {
               </div>
               <div
                 className={openTab === 3 ? 'grid md:grid-cols-2' : 'hidden'}
-                id='link3'
+                id='#link3'
               >
                 <img className='w-[300px] mx-auto my-4' src={Code} alt='/' />
                 <div className='flex flex-col justify-center'>

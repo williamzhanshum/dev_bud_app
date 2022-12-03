@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
-import { animateScroll as scroll } from 'react-scroll';
+import { Link as LinkScroll, animateScroll as scroll } from 'react-scroll';
 
 const Navbar2 = () => {
   const [nav, setNav] = useState(true);
@@ -20,28 +20,40 @@ const Navbar2 = () => {
       </Link>
       <ul className='hidden md:flex'>
         {/* LINK W/ SMOOTH SCROLL  */}
-        {/* <li className='p-4 hover:scale-105 nav-link'>
-          <Link to='steps' smooth={true} offset={50} suration={500}>
-            How It Works
-          </Link>
-        </li>
-        <li className='p-4 hover:scale-105 nav-link'>
-          <Link to='test1' smooth={true} offset={50} suration={500}>
-            Features
-          </Link>
-        </li>
-        <li className='p-4 hover:scale-105 nav-link'>
-          <Link to='test1' smooth={true} offset={50} suration={500}>
-            About Us
-          </Link>
-        </li>
-        <li className='p-4 hover:scale-105 nav-link'>Create Room</li> */}
+        <LinkScroll
+          to='steps'
+          smooth={true}
+          offset={50}
+          duration={500}
+          className='p-4 hover:scale-105 nav-link'
+        >
+          How It Works
+        </LinkScroll>
+        <LinkScroll
+          to='features'
+          smooth={true}
+          offset={0}
+          duration={500}
+          className='p-4 hover:scale-105 nav-link'
+        >
+          Features
+        </LinkScroll>
+        <LinkScroll
+          to='about'
+          smooth={true}
+          offset={100}
+          duration={500}
+          className='p-4 hover:scale-105 nav-link'
+        >
+          About Us
+        </LinkScroll>
+        <li className='p-4 hover:scale-105 nav-link'>Create Room</li>
 
         {/* --- Links W/O smooth scroll --- */}
-        <li className='p-4 hover:scale-105 nav-link'>How It Works</li>
+        {/* <li className='p-4 hover:scale-105 nav-link'>How It Works</li>
         <li className='p-4 hover:scale-105 nav-link'>Features</li>
         <li className='p-4 hover:scale-105 nav-link'>About Us</li>
-        <li className='p-4 hover:scale-105 nav-link'>Create Room</li>
+        <li className='p-4 hover:scale-105 nav-link'>Create Room</li> */}
       </ul>
 
       <div onClick={handleNav} className='block md:hidden'>
