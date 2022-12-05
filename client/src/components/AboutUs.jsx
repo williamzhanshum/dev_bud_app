@@ -1,6 +1,7 @@
 import React from 'react';
 import DefaultPic from '../assets/default-profile-icon.png';
-import willZ from '../assets/willZ.jpg';
+import willZhan from '../assets/will_zhan.jpg';
+import willLiu from '../assets/will_liu.jpg';
 import {
   AiOutlineGithub,
   AiFillLinkedin,
@@ -21,18 +22,17 @@ const AboutUs = () => {
           {/* Individual Card  */}
           <div className='w-full md:w-1/3 shadow-xl flex flex-col p-4 my-4 rounded-lg bg-white hover:scale-105 duration-300'>
             <img
-              className='w-40 mx-auto mt-[-3rem] max-h-32 rounded-xl'
-              src={DefaultPic}
+              className='w-40 mx-auto mt-[-3rem] rounded-xl object-cover'
+              src={willZhan}
               alt='profile-pic'
             />
             <h2 className='text-3xl font-bold text-center py-8'>
               William Zhan
             </h2>
             <p className='text-center text-lg mb-6'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex labore
-              minus magni quod molestias autem voluptatem officia recusandae
-              qui. Aliquid minima et iusto excepturi quod libero, voluptatem
-              facilis qui magnam!
+              I am a full-stack developer with knowledge in HTML, CSS,
+              JavaScript, React, MongoDB, Express, Node.js, Python, Flask, SQL,
+              Bootstrap and TailwindCSS.
             </p>
             <div className='flex p-4 align-middle justify-center gap-10'>
               <a href='https://www.linkedin.com/in/william-zhan/'>
@@ -50,8 +50,8 @@ const AboutUs = () => {
           {/* Individual Card  */}
           <div className='w-full md:w-1/3 shadow-xl flex flex-col p-4 my-4 rounded-lg bg-white hover:scale-105 duration-300'>
             <img
-              className='w-40 mx-auto mt-[-3rem] rounded-xl'
-              src={DefaultPic}
+              className='w-40 mx-auto mt-[-3rem] rounded-xl object-cover'
+              src={willLiu}
               alt='profile-pic'
             />
             <h2 className='text-3xl font-bold text-center py-8'>William Liu</h2>

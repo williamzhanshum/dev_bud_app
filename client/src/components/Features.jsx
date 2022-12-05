@@ -7,9 +7,9 @@ const Features = () => {
       <div className='max-w-[1240px] mx-auto px-2'>
         <h2 className='text-5xl font-bold text-center'>All-In-One Platform</h2>
         <p className='text-2xl py-8 text-gray-600 text-center'>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
-          deleniti consequatur quo reiciendis nesciunt cum impedit earum?
-          Perspiciatis, a fuga?
+          DEVBUD. is an All-In-One platform that allows instructors and students
+          to maximize thier learnign effort and use their time more efficiently.
+          Below is a list of all the features that users have access to.
         </p>
 
         {/* Cards container */}
@@ -22,8 +22,8 @@ const Features = () => {
             <div>
               <h3 className='font-bold text-lg'>Built in IDE</h3>
               <p className='text-lg pt-2 pb-4'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-                nostrum cupiditate fugit deserunt fuga perferendis.
+                Practice your coding skills or work together with others on our
+                built-in IDE, which supports JavaScript, Python and Java.{' '}
               </p>
             </div>
           </div>
@@ -36,8 +36,8 @@ const Features = () => {
             <div>
               <h3 className='font-bold text-lg'>Group Video Chat</h3>
               <p className='text-lg pt-2 pb-4'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-                nostrum cupiditate fugit deserunt fuga perferendis.
+                Get to know your instructor or students through video calls that
+                supports one-on-one or groups.
               </p>
             </div>
           </div>
@@ -50,8 +50,8 @@ const Features = () => {
             <div>
               <h3 className='font-bold text-lg'>Group Chat App</h3>
               <p className='text-lg pt-2 pb-4'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-                nostrum cupiditate fugit deserunt fuga perferendis.
+                Not a fan of video chat? No problem, communicate with your
+                instructor or students through the chat app in the work rooms.
               </p>
             </div>
           </div>
@@ -64,8 +64,8 @@ const Features = () => {
             <div>
               <h3 className='font-bold text-lg'>Collaboration</h3>
               <p className='text-lg pt-2 pb-4'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-                nostrum cupiditate fugit deserunt fuga perferendis.
+                All the features listed above are done in real-time
+                communication, allowing for optimal collaboration between users.
               </p>
             </div>
           </div>

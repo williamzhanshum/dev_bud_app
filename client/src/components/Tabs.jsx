@@ -79,9 +79,8 @@ const Tabs = () => {
                     Pick Your Instructor
                   </h1>
                   <p className=''>
-                    Use the search tool to find teh tutors that best meet your
-                    needs. You can filter the list of instructors based on their
-                    experience and the coding language you want to learn.
+                    Find the instructors that best meet your needs. Look for the
+                    instructors that know the languages you want to learn.
                   </p>
                 </div>
               </div>
@@ -116,9 +115,9 @@ const Tabs = () => {
                   </p>
                   <br />
                   <p>
-                    DEVBUD comes wiht an a free IDE where you and your
+                    DEVBUD comes with a built-in IDE where you and your
                     instructor can work on projects or challenges together. Each
-                    work room comes a chat and webcam feature to make
+                    work room comes with group chat and webcam features to make
                     communication a breeze.
                   </p>
                 </div>

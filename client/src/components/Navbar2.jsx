@@ -11,7 +11,7 @@ const Navbar2 = () => {
   };
 
   return (
-    <div className='flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 border-b'>
+    <div className='flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 shadow-md'>
       {/* <h1 className='text-3xl font-bold mr-4 sm:text-4xl'>
         <Link>DEVBUD.</Link>
       </h1> */}
