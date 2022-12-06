@@ -11,7 +11,7 @@ const Navbar2 = () => {
   };
 
   return (
-    <div className='flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 bg-[#F0F0F0] shadow-md sticky top-0 z-[100]'>
+    <div className='flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 bg-[#F0F0F0] shadow-md sticky top-0 z-50'>
       {/* <h1 className='text-3xl font-bold mr-4 sm:text-4xl'>
         <Link>DEVBUD.</Link>rgb(240, 240, 240)
       </h1> */}
@@ -32,7 +32,7 @@ const Navbar2 = () => {
         <LinkScroll
           to='features'
           smooth={true}
-          offset={-100}
+          offset={0}
           duration={500}
           className='p-4 hover:scale-105 nav-link'
         >

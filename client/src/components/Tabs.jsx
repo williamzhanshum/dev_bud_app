@@ -67,7 +67,7 @@ const Tabs = () => {
               </a>
             </li>
           </ul>
-          <div className='relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded'>
+          <div className='relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded -z-50'>
             <div className='px-4 py-5 flex-auto'>
               <div
                 className={openTab === 1 ? 'grid md:grid-cols-2' : 'hidden'}

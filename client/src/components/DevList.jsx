@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import DevCard from './DevCard';
+import DevModal from './DevModal';
 
 const DevList = () => {
   const [devs, setDevs] = useState([]);
