@@ -27,7 +27,7 @@ const DevSchema = new mongoose.Schema(
       type: String,
       required: [
         true,
-        'Please provide of brief description of your background.',
+        'Please provide a brief description of your background.',
       ],
     },
     javaScript: {

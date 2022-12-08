@@ -4,14 +4,14 @@ import DevModal from '../components/DevModal';
 import Navbar2 from '../components/Navbar2';
 
 const FindDev = () => {
-  const [openModal, setOpenModal] = useState(false);
+  // const [openModal, setOpenModal] = useState(false);
   return (
     <div>
       <div>
         <Navbar2 />
         <DevList />
       </div>
-      <DevModal open={openModal} />
+      {/* <DevModal open={openModal} /> */}
     </div>
   );
 };
