@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import willLiu from '../assets/will_liu.jpg';
+import React from 'react';
+import defaultPic from '../assets/default-profile-icon.png';
 
 const DevModal = ({ handleClose, oneDev }) => {
   // console.log('HERE IS ID:', theDevId);
@@ -18,7 +17,7 @@ const DevModal = ({ handleClose, oneDev }) => {
       >
         <img
           className='w-40 mx-auto mt-[-3rem] rounded-xl object-cover'
-          src={willLiu}
+          src={oneDev.profilePic === '' ? defaultPic : oneDev.profilePic}
           alt='profile-pic'
         />
         <h2 className='text-3xl font-bold text-center py-4 mt-4'>
@@ -28,26 +27,29 @@ const DevModal = ({ handleClose, oneDev }) => {
         <div className='px-10 align-middle'>
           <div className='grid grid-cols-3 text-lg mb-4'>
             <p className='font-semibold'>Description</p>
-            <p className='col-span-2'>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
-              voluptas eligendi corrupti maiores dicta aliquam mollitia placeat
-              eaque dolore voluptatum!
-            </p>
+            <p className='col-span-2'>{oneDev.bio}</p>
           </div>
 
           <div className='grid grid-cols-3 text-lg mb-4'>
             <p className='font-semibold'>Languages</p>
-            <p className='col-span-2'>JavaScript, Python, C#</p>
+            <p className='col-span-2'>
+              {' '}
+              {oneDev.javaScript ? 'JavaScript |' : ''}{' '}
+              {oneDev.python ? 'Python |' : ''} {oneDev.java ? 'Java |' : ''}{' '}
+              {oneDev.cSharp ? 'C#' : ''}
+            </p>
           </div>
 
           <div className='grid grid-cols-3 text-lg mb-4'>
             <p className='font-semibold'>Experience</p>
-            <p className='col-span-2'>10+ years</p>
+            <p className='col-span-2'>{oneDev.yearsOfExp + ' ' + 'years'}</p>
           </div>
 
           <div className='grid grid-cols-3 text-lg mb-4'>
             <p className='font-semibold'>Education</p>
-            <p className='col-span-2'>University of California, Riverside</p>
+            <p className='col-span-2'>
+              {oneDev.education ? oneDev.education : 'N/A'}
+            </p>
           </div>
 
           <div className='flex p-4 align-middle justify-center gap-10'>

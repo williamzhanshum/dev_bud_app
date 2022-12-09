@@ -24,7 +24,7 @@ const DevList = () => {
           id='cards-container'
         >
           {devs.map((oneDev, idx) => (
-            <DevCard oneDev={oneDev} key={idx} devId={idx} />
+            <DevCard oneDev={oneDev} key={idx} />
           ))}
         </div>
       </div>
