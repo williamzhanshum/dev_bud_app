@@ -24,30 +24,10 @@ const DevList = () => {
           id='cards-container'
         >
           {devs.map((oneDev, idx) => (
-            <>
-              <DevCard oneDev={oneDev} key={idx} />
-              {/* <DevModal
-                  key={idx}
-                  oneDevId={oneDev._id}
-                  openModal={openModal}
-                  onClose={() => setOpenModal(false)}
-                /> */}
-            </>
+            <DevCard oneDev={oneDev} key={idx} devId={idx} />
           ))}
         </div>
-        {/* {devs.map((oneDev, idx) => {
-          console.log('>>>>>', oneDev._id);
-          return (
-            <DevModal
-              key={idx}
-              oneDevId={oneDev._id}
-              openModal={openModal}
-              onClose={() => setOpenModal(false)}
-            />
-          );
-        })} */}
       </div>
-      {/* <DevModal openModal={openModal} onClose={() => setOpenModal(false)} /> */}
     </div>
   );
 };

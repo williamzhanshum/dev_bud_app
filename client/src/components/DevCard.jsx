@@ -3,12 +3,14 @@ import defaultPic from '../assets/default-profile-icon.png';
 import DevModal from './DevModal';
 
 const DevCard = (props) => {
-  const { oneDev, key } = props;
+  const { oneDev, devId } = props;
 
+  // const [modalInfo, setModalInfo] = useState([]);
   const [openModal, setOpenModal] = useState(false);
-  // const [modalId, setModalId] = useState('');
+  const [open, setOpen] = useState(false);
+  const [modalId, setModalId] = useState('');
 
-  console.log('-----oneDev----', oneDev);
+  // console.log('-----oneDev----', oneDev);
 
   return (
     <>
@@ -36,8 +38,9 @@ const DevCard = (props) => {
         <div className='flex gap-5 mt-4 flex-col md:flex-row'>
           <button
             onClick={() => {
-              setOpenModal(true);
-              console.log(oneDev._id);
+              // console.log(oneDev._id, oneDev.firstName);
+              setModalId(oneDev._id);
+              setOpenModal(!openModal);
             }}
             className='rounded-md px-8 py-2 text-white border bg-black hover:bg-transparent hover:text-black hover:border-black'
           >
@@ -49,11 +52,9 @@ const DevCard = (props) => {
         </div>
       </div>
 
-      <DevModal
-        key={key}
-        openModal={openModal}
-        onClose={() => setOpenModal(false)}
-      />
+      {openModal && (
+        <DevModal oneDev={oneDev} handleClose={() => setOpenModal(false)} />
+      )}
     </>
   );
 };
