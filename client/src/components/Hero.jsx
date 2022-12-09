@@ -26,9 +26,11 @@ const Hero = () => {
           Learn to code or improve your coding skills alongside experienced
           developers.
         </p>
-        <button className='w-[200px] rounded-md font-medium my-4 mx-auto py-3  text-white border bg-black hover:bg-transparent hover:text-black hover:border-black '>
-          <Link to='/devs'> Find a Developer</Link>
-        </button>
+        <Link to='/devs'>
+          <button className='w-[200px] rounded-md font-medium my-4 mx-auto py-3  text-white border bg-black hover:bg-transparent hover:text-black hover:border-black '>
+            Find a Developer
+          </button>
+        </Link>
       </div>
     </div>
   );
